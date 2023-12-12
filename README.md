@@ -1,40 +1,98 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+<p align="center">
+<svg width="250" height="200" viewBox="0 0 1130 628" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M27.5527 303.496V275.103H225.793V303.496H142.677V539.423H110.669V303.496H27.5527ZM275.192 275.103H313.395L403.222 494.509H406.32L496.147 275.103H534.35V539.423H504.407V338.601H501.826L419.226 539.423H390.316L307.716 338.601H305.135V539.423H275.192V275.103Z" fill="#333333"/>
+<path d="M874.205 275.103H906.212V450.112C906.212 468.181 901.953 484.313 893.435 498.51C885.003 512.621 873.086 523.764 857.685 531.938C842.283 540.026 824.214 544.069 803.478 544.069C782.742 544.069 764.673 540.026 749.272 531.938C733.87 523.764 721.911 512.621 713.392 498.51C704.96 484.313 700.744 468.181 700.744 450.112V275.103H732.752V447.53C732.752 460.437 735.591 471.923 741.27 481.99C746.949 491.971 755.037 499.844 765.534 505.609C776.117 511.288 788.765 514.127 803.478 514.127C818.192 514.127 830.84 511.288 841.423 505.609C852.006 499.844 860.094 491.971 865.687 481.99C871.365 471.923 874.205 460.437 874.205 447.53V275.103ZM1002.14 275.103V539.423H970.131V275.103H1002.14Z" fill="#34D399"/>
+<path d="M607.082 187.424C559.049 297.213 598.077 291.959 655.129 253.378C703.927 220.379 708.442 162.447 682.234 119.209C649.476 129.703 622.992 151.059 607.082 187.424Z" fill="#333333"/>
+<path d="M607.086 66.2766V66.2766C698.491 85.8635 732.565 201.012 655.129 253.378C598.077 291.959 559.049 297.213 607.082 187.424C713.086 -54.8703 1288.54 369.144 1061.39 232.854" stroke="#333333" stroke-width="30.2867"/>
+<path d="M10 157.137C164.522 32.2657 324.578 -21.7404 524.875 43.2186" stroke="#34D399" stroke-width="30.2867"/>
+</svg>
+  <!-- <img src="/images/logo1.png" alt="TM UI Library Logo" width="200" /> -->
+</p>
 
-## Getting Started
+# Tomorrow's UI Components Library
 
-First, run the development server:
+![GitHub stars](https://img.shields.io/github/stars/bobbyhalljr/TM-UI-Open-Source.svg?style=social)
+![GitHub forks](https://img.shields.io/github/forks/bobbyhalljr/TM-UI-Open-Source.svg?style=social)
+![GitHub issues](https://img.shields.io/github/issues/bobbyhalljr/TM-UI-Open-Source.svg)
+![GitHub pull requests](https://img.shields.io/github/issues-pr/bobbyhalljr/TM-UI-Open-Source.svg)
+
+Creating tomorrow's web experience, today! TM UI Library is a cutting-edge collection of meticulously crafted UI components to supercharge your web development process. Unleash the potential of your projects with components that combine elegance, simplicity, and performance.
+
+## Why Choose TM UI?
+
+- **Futuristic Design:** Stay ahead of the curve with a library that embraces modern design principles and trends.
+
+- **Tailwind CSS Integration:** Seamlessly integrate our components with the power and flexibility of Tailwind CSS.
+
+- **Developer-Friendly:** Designed for developers, by developers. Our components are easy to use, customizable, and well-documented.
+
+- **Open Source:** Contribute to an open-source project that values community collaboration. Your input can shape the future of TM UI.
+
+## Features
+
+- **Responsive Design:** Components are optimized for various screen sizes and devices.
+  
+- **Tailwind CSS:** Leverage the full potential of Tailwind CSS for easy styling and customization.
+
+- **Easy to Use:** Simply drop the components into your project and customize as needed.
+
+- **Mission-Driven:** Our mission is to empower developers to build sleek, intuitive, and future-proof interfaces.
+
+## Components
+
+- [Button](#)
+- [Typography](#)
+- [Form Elements](#)
+- [Cards](#)
+- [Alerts](#)
+- [Modals/Dialogs](#)
+- [Navigation](#)
+- [Icons](#)
+- [Lists](#)
+- [Tables](#)
+- [Bonus Elements](#)
+
+## Installation
 
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+npm install tm-ui-library
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Getting Started
 
-You can start editing the page by modifying `pages/index.tsx`. The page auto-updates as you edit the file.
+```
+import { Button, Typography, ... } from 'tm-ui';
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.ts`.
+<Typograghy variant='h1'>
+    This is an H1 element
+</Typograghy>
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+<Button variant='primary' style='solid'>
+    This is a primary button with an solid style
+</Button>
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+<Button variant='accent' style='outline'>
+    This is a accent button with an outline style
+</Button>
+```
 
-## Learn More
+## Contribute
 
-To learn more about Next.js, take a look at the following resources:
+Start crafting your UI with TM components
+Contribution.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+We welcome contributions! If you find any issues or have suggestions, feel free to open an issue or submit a pull request! 
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+## Community
+Join our community of developers to discuss ideas, ask questions, and share your experiences.
 
-## Deploy on Vercel
+## Community Forum
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+License
+This project is licensed under the MIT License - see the LICENSE file for details.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+<p align="center">
+  <a href="https://tm-ui-library.com" target="_blank">
+    <img src="/images/logo.png" alt="Visit TM UI Library Website" />
+  </a>
+</p>
