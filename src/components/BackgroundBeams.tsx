@@ -12,9 +12,9 @@ export const BackgroundBeams: any = () => {
         <p className="text-gray-300 max-w-lg mx-auto my-6 text-medium md:text-lg lg:text-xl font-medium tracking-wide text-left lg:text-center relative z-10">
             Elevate your projects with our meticulously crafted, open-source UI components that streamline your development process, boost creativity, and deliver stunning user experiences
         </p>
-        <p className="text-gray-300 max-w-lg mx-auto my-6 text-xl lg:text-3xl font-bold tracking-wide text-left lg:text-center relative z-10">
+        {/* <p className="text-gray-300 max-w-lg mx-auto my-6 text-xl lg:text-3xl font-bold tracking-wide text-left lg:text-center relative z-10">
           Secure your spot there are only <span className="text-2xl underline text-emerald-400 font-bold">47</span> spots left!
-        </p>
+        </p> */}
         
         {/* Iframe for beehiv embedded form */}
         <iframe className="w-full" src="https://embeds.beehiiv.com/b8b1df8a-163b-472c-86e7-ca02ae54cf2b?slim=true" data-test-id="beehiiv-embed" height="52"></iframe>
