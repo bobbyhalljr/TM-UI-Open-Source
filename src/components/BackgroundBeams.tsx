@@ -1,50 +1,8 @@
 "use client";
-import React, { useState } from "react";
+import React from "react";
 import { motion } from "framer-motion";
-import Button from "./Buttons";
-import { AnimatedButton } from "./AnimatedButton";
 
 export const BackgroundBeams = () => {
-    const [email, setEmail] = useState('');
-    const [fullName, setFullName] = useState('');
-  
-    const handleEmail = (e: React.ChangeEvent<HTMLInputElement>) => {
-      setEmail(e.target.value);
-    };
-  
-    const handleFullName = (e: React.ChangeEvent<HTMLInputElement>) => {
-      setFullName(e.target.value);
-    };
-  
-    const createContact = async () => {
-      try {
-        const response = await fetch('https://api.omnisend.com/v3/contacts', {
-            method: 'POST',
-            headers: {
-              'accept': 'application/json',
-              'content-type': 'application/json',
-              'X-API-KEY': `${process.env.OMNISEND_API_KEY}`,
-            },
-            body: JSON.stringify({
-            //   sendWelcomeEmail: true,
-              identifiers: [
-                {
-                  type: 'email',
-                  channels: {email: {status: 'subscribed'}},
-                  id: email
-                }
-              ],
-              tags: ['tm-ui-launch']
-            })
-          });
-  
-        const data = await response.json();
-        console.log(data);
-      } catch (error) {
-        console.error(error);
-      }
-    };
-
   return (
     <div className="h-screen bg-gray-950 relative flex flex-col items-center justify-center antialiased">
       <div className="max-w-2xl lg:w-full z-10 w-[90%] bg-gray-700 rounded-3xl mx-auto p-8">
@@ -58,22 +16,10 @@ export const BackgroundBeams = () => {
         <p className="text-gray-300 max-w-lg mx-auto my-6 text-xl lg:text-3xl font-bold tracking-wide text-left lg:text-center relative z-10">
           Secure your spot there are only <span className="text-2xl underline text-emerald-400 font-bold">47</span> spots left!
         </p>
-        <form>
-            {/* <input
-                type="text"
-                onChange={handleFullName}
-                placeholder="full name"
-                className="rounded-lg border py-3 px-4 border-gray-700 focus:ring-2 focus:ring-blue-400 w-full relative z-10 mt-4 p-2  bg-gray-200 placeholder:text-gray-700"
-            /> */}
-            <iframe className="w-full" src="https://embeds.beehiiv.com/b8b1df8a-163b-472c-86e7-ca02ae54cf2b?slim=true" data-test-id="beehiiv-embed" height="52"></iframe>
-            {/* <input
-                type="email"
-                onChange={handleEmail}
-                placeholder="email address"
-                className="rounded-lg border py-3 px-4 border-gray-700 focus:ring-2 focus:ring-blue-400 w-full relative z-10 mt-4 p-2  bg-gray-200 placeholder:text-gray-700"
-            /> */}
-        </form>
-        {/* <button type='submit' onClick={createContact} className="py-3 cursor-pointer z-10 hover:bg-emerald-500 px-6 bg-emerald-400 rounded-2xl w-full mt-8">Join the waitlist</button> */}
+        
+        {/* Iframe for beehiv embedded form */}
+        <iframe className="w-full" src="https://embeds.beehiiv.com/b8b1df8a-163b-472c-86e7-ca02ae54cf2b?slim=true" data-test-id="beehiiv-embed" height="52"></iframe>
+
       </div>
       <BackgroundSVG />
     </div>
