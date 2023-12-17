@@ -1,7 +1,7 @@
 import React from "react";
 import { motion } from "framer-motion";
 
-export const BackgroundBeams = () => {
+export const BackgroundBeams: any = () => {
   return (
     <div className="h-screen bg-gray-950 relative flex flex-col items-center justify-center antialiased">
       <div className="max-w-2xl lg:w-full z-10 w-[90%] bg-gray-700 rounded-3xl mx-auto p-8">
